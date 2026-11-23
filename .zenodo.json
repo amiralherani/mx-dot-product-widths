@@ -1,0 +1,21 @@
+{
+  "title": "Exact accumulator widths for OCP MX dot products",
+  "upload_type": "software",
+  "description": "How wide a two's-complement accumulator has to be so that the sum of 32 element products in an OCP Microscaling (MX) dot product is exact, for every MX element format, with a script that derives the table from the bit encodings.",
+  "creators": [
+    {
+      "name": "Al-Herani, Amir",
+      "orcid": "0009-0003-4962-3604"
+    }
+  ],
+  "license": "apache-2.0",
+  "keywords": [
+    "OCP Microscaling",
+    "MX",
+    "MXFP4",
+    "MXFP8",
+    "computer arithmetic",
+    "dot product"
+  ],
+  "related_identifiers": []
+}
