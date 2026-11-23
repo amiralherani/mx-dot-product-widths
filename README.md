@@ -1,5 +1,7 @@
 # Exact accumulator widths for OCP MX dot products
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24476621.svg)](https://doi.org/10.5281/zenodo.24476621)
+
 The OCP Microscaling (MX) spec defines the dot product of two blocks as the sum of 32 element products, scaled by the two block scales, and leaves the internal precision of that sum to the implementer (v1.1, section 6.1).
 
 A question that comes up as soon as you try to build one: if nothing inside is allowed to round or overflow, how wide does the accumulator have to be?
@@ -39,6 +41,10 @@ Plain Python, standard library only. The script builds each format's value set f
 It tells you the width at which the sum itself is exact. It says nothing about rounding the final sum to an output format, about accumulating across many blocks, or about what a narrower accumulator with truncation costs you in accuracy. Those are separate questions with their own answers.
 
 The gap between the formats is the thing to notice. 14 bits for MXFP4 is nothing. 70 bits for E5M2 is a real adder, and it is the reason people are tempted to truncate there.
+
+## Citing
+
+Al-Herani, A. (2026). *Exact accumulator widths for OCP MX dot products* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.24476621
 
 ## Contact
 
